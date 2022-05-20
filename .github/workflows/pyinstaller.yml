@@ -15,7 +15,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller
-        if exist requirements.txt pip -r requirements.txt
+        if exist requirements.txt (pip -r requirements.txt)
     - name: Building with PyInstaller
       run: |
         pyinstaller --onefile --console main.py
